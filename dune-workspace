@@ -1,0 +1,19 @@
+(lang dune 3.13)
+
+(pin
+ (url "git+https://github.com/Leonidas-from-XIV/ocamlfind#relocatable-relative-path")
+ (name ocamlfind)
+ (package
+  (name ocamlfind)
+  (version 1.9.6)))
+
+(pin
+ (url "git+https://github.com/gridbugs/ocamlbuild#pkg-hacks")
+ (name ocamlbuild)
+ (package
+  (name ocamlbuild)
+  (version 0.14.2)))
+
+(lock_dir
+ (pins ocamlfind ocamlbuild )
+ (constraints ocaml-system))
